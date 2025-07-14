@@ -316,7 +316,7 @@ class Program
     }
 }
 
-*/
+
 
 // 11- - Write a program in C# Sharp to merge two arrays of the same size sorted in ascending order.
 
@@ -353,4 +353,35 @@ class Program
         }
     }
 }
+*/
+
+// 12- Write a program in C# Sharp to find maximum and minimum element in an array
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 7, 2, 9, 4, 1 };
+
+        int min = arr[0];
+        int max = arr[0];
+
+        for (int i = 1; i < arr.Length; i++)
+        {
+            if (arr[i] < min)
+                min = arr[i];
+
+            if (arr[i] > max)
+                max = arr[i];
+        }
+
+        Console.WriteLine("Min = " + min);
+        Console.WriteLine("Max = " + max);
+    }
+}
+
+
+
 
