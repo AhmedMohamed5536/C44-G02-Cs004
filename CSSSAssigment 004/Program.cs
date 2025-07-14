@@ -79,7 +79,7 @@ namespace CSSSAssigment_004
         }
     }
 }
-*/
+
 
 // 3- Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
 
@@ -111,7 +111,38 @@ class Program
     }
 }
 
+*/
 
+// 4- Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number. Output should be like Enter a number: 25 The sum of the digits of the number 25 is: 7
+
+using System;
+
+class Program
+{
+    static int AddDigits(int num)
+    {
+        int total = 0;
+
+        while (num > 0)
+        {
+            int digit = num % 10;   
+            total = total + digit;  
+            num = num / 10;         
+        }
+
+        return total;
+    }
+
+    static void Main()
+    {
+        Console.Write("Enter a number: ");
+        int number = int.Parse(Console.ReadLine());
+
+        int sum = AddDigits(number);
+
+        Console.WriteLine("The sum of the digits of the number " + number + " is: " + sum);
+    }
+}
 
 
 
