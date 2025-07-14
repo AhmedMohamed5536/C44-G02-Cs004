@@ -413,7 +413,7 @@ class Program
     }
 }
 
-*/
+
 
 // 14- Consider an Array of Integer values with size N, having values as
 //in this Example
@@ -454,4 +454,28 @@ class Program
         Console.WriteLine("Longest distance = " + maxDistance);
     }
 }
+*/
+// 15 Given a list of space separated words, reverse the order of the words.
+//Input: this is a test Output: test a is this
+//Input: all your base Output: base your all
+//Input: Word Output: Word
+//Note :
+//Check the Split Function (Member in String Class) Output will be a Single Console.WriteLine Statement
 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string sentence = "this is a test";
+
+        string[] words = sentence.Split(' '); 
+
+        Array.Reverse(words); 
+
+        string result = string.Join(" ", words); 
+
+        Console.WriteLine(result);
+    }
+}
