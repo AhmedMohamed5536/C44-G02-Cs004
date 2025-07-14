@@ -353,7 +353,7 @@ class Program
         }
     }
 }
-*/
+
 
 // 12- Write a program in C# Sharp to find maximum and minimum element in an array
 
@@ -381,7 +381,37 @@ class Program
         Console.WriteLine("Max = " + max);
     }
 }
+*/
 
+// 13- Write a program in C# Sharp to find the second largest element in an array.
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 10, 5, 8, 20, 15 };
+
+        int max = int.MinValue;
+        int second = int.MinValue;
+
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] > max)
+            {
+                second = max;
+                max = arr[i];
+            }
+            else if (arr[i] > second && arr[i] != max)
+            {
+                second = arr[i];
+            }
+        }
+
+        Console.WriteLine("Second largest = " + second);
+    }
+}
 
 
 
