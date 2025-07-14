@@ -293,7 +293,7 @@ class Program
         }
     }
 }
-*/
+
 
 // 10- Write a program in C# Sharp to find the sum of all elements of the array.
 
@@ -316,4 +316,41 @@ class Program
     }
 }
 
+*/
+
+// 11- - Write a program in C# Sharp to merge two arrays of the same size sorted in ascending order.
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr1 = { 2, 8, 1 };
+        int[] arr2 = { 5, 3, 4 };
+
+        int[] merged = new int[arr1.Length + arr2.Length];
+
+        
+        for (int i = 0; i < arr1.Length; i++)
+        {
+            merged[i] = arr1[i];
+        }
+
+        
+        for (int i = 0; i < arr2.Length; i++)
+        {
+            merged[i + arr1.Length] = arr2[i];
+
+        }
+
+        Array.Sort(merged); 
+
+        
+        for (int i = 0; i < merged.Length; i++)
+        {
+            Console.Write(merged[i] + " ");
+        }
+    }
+}
 
