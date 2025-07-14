@@ -238,7 +238,7 @@ class Program
         Console.WriteLine("Factorial of " + number + " is: " + fact);
     }
 }
-*/
+
 
 // 8- Create a function named "ChangeChar" to modify a letter in a certain position (0 based) of a string, replacing it with a different letter
 
@@ -265,6 +265,32 @@ class Program
 
         Console.WriteLine("Before: " + text);
         Console.WriteLine("After:  " + result);
+    }
+}
+*/
+
+// 9- . Write a program that prints an identity matrix using for loop, in other words takes a value n from the user and shows the identity table of size n * n.
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = 4; 
+
+        for (int i = 0; i < n; i++)         
+        {
+            for (int j = 0; j < n; j++)     
+            {
+                if (i == j)
+                    Console.Write("1 ");
+                else
+                    Console.Write("0 ");
+            }
+
+            Console.WriteLine(); 
+        }
     }
 }
 
