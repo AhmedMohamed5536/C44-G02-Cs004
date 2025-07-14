@@ -144,7 +144,7 @@ class Program
     }
 }
 
-*/
+
 
 // 5- Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
 
@@ -177,5 +177,38 @@ class Program
             Console.WriteLine(num + " is NOT a prime number.");
     }
 }
+*/
+
+// 6- Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 4, 8, 1, 9, 3 }; 
+
+        int min = numbers[0];
+        int max = numbers[0];
+
+        for (int i = 1; i < numbers.Length; i++)
+        {
+            if (numbers[i] < min)
+            {
+                min = numbers[i]; 
+            }
+
+            if (numbers[i] > max)
+            {
+                max = numbers[i]; 
+            }
+        }
+
+        Console.WriteLine("Smallest number = " + min);
+        Console.WriteLine("Largest number = " + max);
+    }
+}
+
 
 
