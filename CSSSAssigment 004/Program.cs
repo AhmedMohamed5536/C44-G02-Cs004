@@ -36,7 +36,7 @@ namespace CSSSAssigment_004
     }
 }
 
-*/
+
 
 // 2- Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example.
 
@@ -79,5 +79,39 @@ namespace CSSSAssigment_004
         }
     }
 }
+*/
+
+// 3- Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
+
+using System;
+
+class Program
+{
+    static void SumAndSubtract(int a, int b, int c, int d, out int sum, out int subtract)
+    {
+        sum = a + b + c + d;
+        subtract = a - b - c - d;
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("V03");
+
+        Console.WriteLine("Enter 4 numbers:");
+
+        int n1 = int.Parse(Console.ReadLine());
+        int n2 = int.Parse(Console.ReadLine());
+        int n3 = int.Parse(Console.ReadLine());
+        int n4 = int.Parse(Console.ReadLine());
+
+        SumAndSubtract(n1, n2, n3, n4, out int resultSum, out int resultSubtract);
+
+        Console.WriteLine("Sum = " + resultSum);
+        Console.WriteLine("Subtraction = " + resultSubtract);
+    }
+}
+
+
+
 
 
