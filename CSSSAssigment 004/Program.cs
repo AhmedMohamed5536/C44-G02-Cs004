@@ -177,7 +177,7 @@ class Program
             Console.WriteLine(num + " is NOT a prime number.");
     }
 }
-*/
+
 
 // 6- Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
 
@@ -207,6 +207,35 @@ class Program
 
         Console.WriteLine("Smallest number = " + min);
         Console.WriteLine("Largest number = " + max);
+    }
+}
+*/
+// 7- Create function to calculate the factorial of the number specified as parameter
+
+using System;
+
+class Program
+{
+    
+    static int Factorial(int num)
+    {
+        int result = 1;
+
+        for (int i = 1; i <= num; i++)
+        {
+            result = result * i;
+        }
+
+        return result;
+    }
+
+    static void Main()
+    {
+        int number = 5;  
+
+        int fact = Factorial(number);
+
+        Console.WriteLine("Factorial of " + number + " is: " + fact);
     }
 }
 
