@@ -454,7 +454,7 @@ class Program
         Console.WriteLine("Longest distance = " + maxDistance);
     }
 }
-*/
+
 // 15 Given a list of space separated words, reverse the order of the words.
 //Input: this is a test Output: test a is this
 //Input: all your base Output: base your all
@@ -477,5 +477,43 @@ class Program
         string result = string.Join(" ", words); 
 
         Console.WriteLine(result);
+    }
+}
+*/
+
+// 16- Write a program to create two multidimensional arrays of same size. Accept values from the user and store them in first array. Now copy all the elements of the first array on second array and print second array.
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[,] arr1 = {
+            { 1, 2 },
+            { 3, 4 }
+        };
+
+        int[,] arr2 = new int[2, 2];
+
+        
+        for (int i = 0; i < 2; i++)
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                arr2[i, j] = arr1[i, j];
+            }
+        }
+
+        
+        Console.WriteLine("Copied 2D array:");
+        for (int i = 0; i < 2; i++)
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                Console.Write(arr2[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
     }
 }
