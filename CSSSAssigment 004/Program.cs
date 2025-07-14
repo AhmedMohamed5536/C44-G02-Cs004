@@ -111,7 +111,7 @@ class Program
     }
 }
 
-*/
+
 
 // 4- Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number. Output should be like Enter a number: 25 The sum of the digits of the number 25 is: 7
 
@@ -144,5 +144,38 @@ class Program
     }
 }
 
+*/
+
+// 5- Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
+
+using System;
+
+class Program
+{
+    static bool IsPrime(int number)
+    {
+        if (number <= 1)
+            return false;
+
+        for (int i = 2; i < number; i++)
+        {
+            if (number % i == 0)
+                return false; 
+        }
+
+        return true; 
+    }
+
+    static void Main()
+    {
+        Console.Write("Enter a number: ");
+        int num = int.Parse(Console.ReadLine());
+
+        if (IsPrime(num))
+            Console.WriteLine(num + " is a prime number.");
+        else
+            Console.WriteLine(num + " is NOT a prime number.");
+    }
+}
 
 
