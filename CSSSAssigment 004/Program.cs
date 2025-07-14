@@ -479,7 +479,7 @@ class Program
         Console.WriteLine(result);
     }
 }
-*/
+
 
 // 16- Write a program to create two multidimensional arrays of same size. Accept values from the user and store them in first array. Now copy all the elements of the first array on second array and print second array.
 
@@ -514,6 +514,27 @@ class Program
                 Console.Write(arr2[i, j] + " ");
             }
             Console.WriteLine();
+        }
+    }
+}
+
+*/
+
+// 17- Write a Program to Print One Dimensional Array in Reverse Order
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5 };
+
+        Console.WriteLine("Array in reverse order:");
+
+        for (int i = numbers.Length - 1; i >= 0; i--)
+        {
+            Console.Write(numbers[i] + " ");
         }
     }
 }
