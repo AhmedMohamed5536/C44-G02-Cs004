@@ -209,7 +209,7 @@ class Program
         Console.WriteLine("Largest number = " + max);
     }
 }
-*/
+
 // 7- Create function to calculate the factorial of the number specified as parameter
 
 using System;
@@ -238,6 +238,34 @@ class Program
         Console.WriteLine("Factorial of " + number + " is: " + fact);
     }
 }
+*/
 
+// 8- Create a function named "ChangeChar" to modify a letter in a certain position (0 based) of a string, replacing it with a different letter
+
+using System;
+
+class Program
+{
+    
+    static string ChangeChar(string word, int position, char newChar)
+    {
+        char[] chars = word.ToCharArray(); 
+
+        chars[position] = newChar;         
+        return new string(chars);          
+    }
+
+    static void Main()
+    {
+        string text = "hello";     
+        int pos = 1;              
+        char replacement = 'a';    
+
+        string result = ChangeChar(text, pos, replacement);
+
+        Console.WriteLine("Before: " + text);
+        Console.WriteLine("After:  " + result);
+    }
+}
 
 
